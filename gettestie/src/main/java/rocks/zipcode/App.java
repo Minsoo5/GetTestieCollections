@@ -1,5 +1,6 @@
 package rocks.zipcode;
 
+import java.sql.Array;
 import java.util.*;
 
 /**
@@ -32,17 +33,20 @@ public final class App {
         jeff.setAddress(jeffsHouse);
 //        ryan.setAddress(ryansHouse);
 
-       ArrayList<Person> ar = new ArrayList<>();
+        Vector<Person> vec = new Vector<>();
 
-       ar.add(min);
-       ar.add(jeff);
-       ar.add(ryan);
-       ar.add(jeff);
+        vec.addElement(jeff);
+        vec.addElement(min);
+        vec.addElement(ryan);
+
+        System.out.println(vec.size());
 
 
-       ar.set(3, calvin);
+        System.out.println("@@@@@@@@@@@@@@@@@@");
 
-        System.out.println(ar.toString());
+        System.out.println(vec.size());
+
+
 
     }
 
