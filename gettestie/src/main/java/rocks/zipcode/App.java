@@ -32,22 +32,17 @@ public final class App {
         jeff.setAddress(jeffsHouse);
 //        ryan.setAddress(ryansHouse);
 
-        ArrayDeque<Person> ad = new ArrayDeque();
-        ArrayDeque<Person> adNew = new ArrayDeque();
+       ArrayList<Person> ar = new ArrayList<>();
 
-        ad.add(jeff);
-        ad.add(ryan);
-        ad.add(min);
+       ar.add(min);
+       ar.add(jeff);
+       ar.add(ryan);
+       ar.add(jeff);
 
-        adNew.add(jeff);
-        adNew.add(min);
 
-        System.out.println(ad.toString());
+       ar.set(3, calvin);
 
-        ad.removeAll(adNew);
-        System.out.println("----------------------");
-
-        System.out.println(ad.toString());
+        System.out.println(ar.toString());
 
     }
 
