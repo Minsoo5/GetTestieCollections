@@ -1,8 +1,6 @@
 package rocks.zipcode;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * Hello world!
@@ -32,29 +30,39 @@ public final class App {
         min.setAddress(minsHouse);
         calvin.setAddress(calvinsHouse);
         jeff.setAddress(jeffsHouse);
-        ryan.setAddress(ryansHouse);
+//        ryan.setAddress(ryansHouse);
 
-        HashSet hs = new HashSet();
+        List ll = new LinkedList<Person>();
 
-        HashSet hs2 = new HashSet();
+        ll.add(ryan);
+        ll.add(min);
+        ll.add(ryan);
+        ll.add(calvin);
+        ll.add(ryan);
 
-        Stack stack = new Stack();
+        HashMap<Person, Address> hm = new HashMap<>();
 
-        hs.add(ryan);
-        hs.add(calvin);
-        hs.add(ryan);
+        hm.put(ryan, ryansHouse);
+        hm.put(min, minsHouse);
+        hm.put(jeff, ryansHouse);
+//        hm.replace();
+//        hm.containsKey();
 
-        System.out.println(hs);
+        System.out.println(hm.get(min));
 
-        hs.clear();
+        hm.replace(min, minsHouse, jeffsHouse);
 
-        System.out.println("-------------------");
+        System.out.println(hm.get(min));
+
+//        System.out.println(hm.containsValue(min));
 
 
-        System.out.println(hs);
+//        System.out.println(hm.get(min));
+
 
 
     }
+
 
 
 

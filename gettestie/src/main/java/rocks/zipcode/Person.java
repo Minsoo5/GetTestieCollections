@@ -14,6 +14,9 @@ public class Person {
         this.yearOfBirth = yearOfBirth;
     }
 
+    public Person() {
+    }
+
     /**
      * Set a new name for this person.
      */
