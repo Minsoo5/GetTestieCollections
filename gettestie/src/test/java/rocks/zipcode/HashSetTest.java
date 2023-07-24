@@ -38,6 +38,22 @@ public class HashSetTest {
         Assert.assertTrue(hs.size() == 0);
 
     }
+    @Test
+    public void hashSetTest() {
+        //Given
+        HashSet hs = new HashSet();
+        hs.add("ryan");
+        hs.add("calvin");
+
+        //When
+
+        //Then
+        Assert.assertFalse(hs.contains(5));
+
+    }
+
+
+
 
 
 }
