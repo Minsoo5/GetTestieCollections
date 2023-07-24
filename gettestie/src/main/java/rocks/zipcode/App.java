@@ -32,35 +32,22 @@ public final class App {
         jeff.setAddress(jeffsHouse);
 //        ryan.setAddress(ryansHouse);
 
-        List ll = new LinkedList<Person>();
+        ArrayDeque<Person> ad = new ArrayDeque();
+        ArrayDeque<Person> adNew = new ArrayDeque();
 
-        ll.add(ryan);
-        ll.add(min);
-        ll.add(ryan);
-        ll.add(calvin);
-        ll.add(ryan);
+        ad.add(jeff);
+        ad.add(ryan);
+        ad.add(min);
 
-        HashMap<Person, Address> hm = new HashMap<>();
+        adNew.add(jeff);
+        adNew.add(min);
 
-        hm.put(ryan, ryansHouse);
-        hm.put(min, minsHouse);
-        hm.put(jeff, ryansHouse);
-//        hm.replace();
-//        hm.containsKey();
+        System.out.println(ad.toString());
 
-        System.out.println(hm.get(min));
+        ad.removeAll(adNew);
+        System.out.println("----------------------");
 
-        hm.replace(min, minsHouse, jeffsHouse);
-
-        System.out.println(hm.get(min));
-
-//        System.out.println(hm.containsValue(min));
-
-
-//        System.out.println(hm.get(min));
-
-
-
+        System.out.println(ad.toString());
 
     }
 
