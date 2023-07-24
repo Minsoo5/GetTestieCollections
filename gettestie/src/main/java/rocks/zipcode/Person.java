@@ -1,4 +1,4 @@
-package gettestie.src.main.java.rocks.zipcode;
+package rocks.zipcode;
 
 
 public class Person {
@@ -49,6 +49,9 @@ public class Person {
         address = new Address(street, town, postCode);
     }
 
+    public void setAddress(Address address) {
+        this.address = address;
+    }
     /**
      * Return the address of this person.
      */
