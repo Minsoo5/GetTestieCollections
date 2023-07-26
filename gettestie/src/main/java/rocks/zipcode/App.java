@@ -33,18 +33,10 @@ public final class App {
         jeff.setAddress(jeffsHouse);
 //        ryan.setAddress(ryansHouse);
 
-        Vector<Person> vec = new Vector<>();
 
-        vec.addElement(jeff);
-        vec.addElement(min);
-        vec.addElement(ryan);
-
-        System.out.println(vec.size());
+        HashMap<List<String>, Integer> inventory = new HashMap();
 
 
-        System.out.println("@@@@@@@@@@@@@@@@@@");
-
-        System.out.println(vec.size());
 
 
 
